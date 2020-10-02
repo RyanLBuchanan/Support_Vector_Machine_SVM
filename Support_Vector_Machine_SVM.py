@@ -37,7 +37,7 @@ print(X_test)
 
 # Train the Support Vector Machine model on the Training set
 from sklearn.svm import SVC
-classifier = SVC(random_state=0)
+classifier = SVC(kernel = 'linear', random_state=0)
 classifier.fit(X_train, y_train)
 
 # Predict a new result
